@@ -11,7 +11,7 @@
   font-family: "Roboto Slab", serif;
   --bg-dark: #0b132b;
   --bg-light: #1c2541;
-  --finger-color: rgba(255, 255, 0, 0.4);
+  --finger-color: rgba(255, 255, 0, 0.3);
 }
 main {
   width: 100vw;
@@ -23,8 +23,8 @@ main {
   align-items: center;
 }
 .frame {
-  width: 500px;
-  height: 500px;
+  width: min(500px);
+  height: min(500px);
   border-radius: 100%;
   background: conic-gradient(
     from 0deg at 50% 50%,
@@ -163,10 +163,20 @@ main {
 }
 
 .number_frame {
+  display: grid;
+  place-content: center;
   background: var(--bg-light);
-  padding: 0.8rem;
-  border-radius: 0.8rem;
+
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
   margin: 0.6rem;
+  outline: 2px solid var(--finger-color);
+  outline-offset: 7px;
+}
+.point_frame {
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
 }
 
 span:has(p) {
