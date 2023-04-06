@@ -112,6 +112,8 @@ main {
     ),
     radial-gradient(circle at center, var(--bg-light) 280px, transparent 280px);
   z-index: 1;
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.5),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.3);
 }
 .point {
   position: absolute;
