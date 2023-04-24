@@ -121,6 +121,7 @@ main {
   height: 30px;
   background: #1c2541;
   border-radius: 100%;
+
   border: 4px solid var(--bg-dark);
 }
 
